@@ -1,0 +1,8 @@
+*.docx
+*.pdf
+*.aux
+*.out
+*.log
+*.gz
+*.DS_Store
+*.synctex.gz
