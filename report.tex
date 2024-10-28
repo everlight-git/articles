@@ -1,4 +1,4 @@
-\documentclass[12pt, a4paper]{article}
+\documentclass[10pt, a4paper]{article}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english, russian]{babel}
@@ -10,6 +10,14 @@
 \usepackage{stmaryrd, caption}
 \usepackage{graphicx}
 \usepackage{chemfig}
+\setchemfig{
+  atom sep=14.4pt,
+  double bond sep=2.6pt,
+  bond style={line width=0.6pt},
+  cram width=2.0pt,
+  angle increment=60
+}
+\renewcommand*\printatom[1]{\small\ensuremath{\mathsf{#1}}}
 \usepackage[margin=30pt]{geometry}
 \usepackage[export]{adjustbox}
 \graphicspath{{./pics}}
@@ -279,12 +287,12 @@ in a peak at \(\lambda 531 \text{нм}\) \\
   \centering
   \includegraphics[scale=1]{hspegoch.pdf}
   \captionsetup{labelformat=empty}
-  \caption{Меркапто(Тио)-Метокси полиэтиленгликоль}
+  \caption{Меркапто-Метокси полиэтиленгликоль}
 \end{figure*}
 
 \begin{figure*}[ht!]
   \centering 
-  \chemfig{--[1]N=C=N-[1]--[1]-N(-[1])(-[7])}
+  \chemfig{H_3C--[1]N=C=N-[1]--[1]-N(-[1]CH_3)(-[5]CH_3)}
   \captionsetup{labelformat=empty}
   \caption{1-Этил-3-(3-диметиламинопроаил)карбодиимид}
 \end{figure*}

@@ -7,5 +7,8 @@
 *.DS_Store
 *.synctex.gz
 *.cdx
+*.nav
+*.snm
+*.toc
 
 !pics/*.pdf
